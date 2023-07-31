@@ -29,11 +29,6 @@ Route::get('/error', function(){
     return view('error-user');
 });
 
-//Perfil do candidato
-Route::get('/perfil-candidato', function(){
-    return view('perfil-candidato');
-});
-
 //Perfil do usuário
 Route::get('/perfil-candidato/{id}', function($id_user){
     $user = User::findOrFail($id_user);
