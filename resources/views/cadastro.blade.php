@@ -10,6 +10,7 @@
 
     <form action="/cadastrar-usuario" method="POST">
         @csrf
+        <h1>The Register</h1>
         <label for="">Nome:</label>
         <input type="text" name="name_user">
         <br><br>

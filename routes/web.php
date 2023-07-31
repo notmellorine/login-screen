@@ -41,10 +41,6 @@ Route::get('/cadastro', function(){
     return view('cadastro');
 });
 
-Route::get('/cadastro', function (){
-    return view('cadastro');
-});
-
 Route::post('/cadastrar-usuario', function(Request $info){
     User::create([
         'name' => $info->name_user,
