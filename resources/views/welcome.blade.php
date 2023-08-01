@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tela de Login</title>
+    <title>Login Screen</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
         <br>
         <input type="password" placeholder="Insira your password..." name="password_user">
         <br><br>
-        <button>Enviar</button>
+        <button>Send</button>
         <br><br>
         <label for="">Not registred? Register </label>
         <a href="/cadastro">here</a>.

@@ -6,9 +6,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
+//Tela de login
 Route::get('/', function () {
     return view('welcome');
 });
+
 //Login do Usuário
 Route::post('/login', function(Request $request){
     $user = User::where('email', $request->email_user)->first();
@@ -32,9 +34,9 @@ Route::get('/error', function(){
 //Perfil do usuário
 Route::get('/perfil-candidato/{id}', function($id_user){
     $user = User::findOrFail($id_user);
-    echo $user->name;
-    echo "<br/>";
-    echo $user->email;
+    $name = $user->name;
+    $email = $user->email;
+    return view('perfil-candidato', compact('name', 'email'));
 });
 
 Route::get('/cadastro', function(){
